@@ -13,7 +13,9 @@
 			rel="stylesheet"
 		/>
 	</head>
-	<body class="text-white bg-bkg selection:bg-accent selection:text-bkg">
+	<body
+		class="text-base text-white bg-bkg selection:bg-accent selection:text-bkg"
+	>
 		<div class="parallax">
 			<nav
 				class="absolute top-0 z-50 grid w-full place-items-center drop-shadow-text-sm"
@@ -130,6 +132,254 @@
 						dreams in the most exotic locations all around the globe.
 					</p>
 				</section>
+				<section
+					aria-labelledby="slider"
+					class="container relative grid gap-4 text-center sm:text-left"
+				>
+					<div class="relative">
+						<div
+							class="absolute hidden w-8 h-full sm:block bg-accent/10 -left-4"
+						></div>
+						<div>
+							<small class="tracking-widest uppercase text-accent drop-shadow-text-sm"
+								>Off The Beaten Path</small
+							>
+							<h2
+								id="slider"
+								class="text-3xl font-bold tracking-wide drop-shadow-text-md"
+							>
+								Place without People
+							</h2>
+						</div>
+					</div>
+					<div
+						class="flex flex-wrap items-center justify-center space-x-4 space-y-4 sm:flex-nowrap sm:justify-between"
+					>
+						<p class="max-w-2xl text-muted drop-shadow-text-sm">
+							We find once-in-a-lifetime locations and reserve them for travelers full
+							of adventure. Calling all explorers and extremists to the trip of their
+							dreams in the most exotic locations all around the globe.
+						</p>
+						<div class="flex space-x-4">
+							<button
+								data-slideBtn
+								id="prev"
+								aria-label="show previous image"
+								class="grid p-2 rounded-full place-items-center bg-accent hover:bg-accent/90 text-bkg focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg ring-accent disabled:bg-accent/20 disabled:text-accent"
+								disabled
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="36"
+									height="36"
+									class="pointer-events-none"
+									fill="currentColor"
+									viewBox="0 0 256 256"
+								>
+									<rect width="256" height="256" fill="none"></rect>
+									<circle
+										cx="128"
+										cy="128"
+										r="96"
+										fill="none"
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="24"
+									></circle>
+									<polyline
+										points="121.9 161.9 88 128 121.9 94.1"
+										fill="none"
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="24"
+									></polyline>
+									<line
+										x1="168"
+										y1="128"
+										x2="88"
+										y2="128"
+										fill="none"
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="24"
+									></line>
+								</svg>
+							</button>
+							<button
+								data-slideBtn
+								id="next"
+								aria-label="show next image"
+								class="grid p-2 rounded-full place-items-center bg-accent hover:bg-accent/90 text-bkg focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bkg ring-accent disabled:bg-accent/20 disabled:text-accent"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="36"
+									height="36"
+									class="pointer-events-none"
+									fill="currentColor"
+									viewBox="0 0 256 256"
+								>
+									<rect width="256" height="256" fill="none"></rect>
+									<circle
+										cx="128"
+										cy="128"
+										r="96"
+										fill="none"
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="24"
+									></circle>
+									<polyline
+										points="134.1 161.9 168 128 134.1 94.1"
+										fill="none"
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="24"
+									></polyline>
+									<line
+										x1="88"
+										y1="128"
+										x2="168"
+										y2="128"
+										fill="none"
+										stroke="currentColor"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="24"
+									></line>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</section>
+				<div class="container -mt-10 sm:-mt-20 lg:-mt-36 xs:w-screen">
+					<div data-slideContainer class="flex transition-transform duration-500">
+						<div
+							class="relative flex-grow flex-shrink-0 w-full pr-4 data-slide xs:w-auto"
+						>
+							<img
+								class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+								src="./images/slider-1.jpg"
+								alt="Iceland screen"
+							/>
+							<p
+								class="absolute px-4 py-2 text-lg font-bold tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity pointer-events-none bottom-4 left-4 bg-bkg"
+							>
+								Ocean Wonders
+							</p>
+						</div>
+						<div
+							class="relative flex-grow flex-shrink-0 w-full pr-4 xs:w-auto xs:basis-96"
+							data-slide
+						>
+							<img
+								class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+								src="./images/slider-2.jpg"
+								alt="Iceland Scene"
+							/>
+							<p
+								class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+							>
+								Waterfall Cave
+							</p>
+						</div>
+						<div
+							class="relative flex-grow flex-shrink-0 w-full pr-4 xs:w-auto xs:basis-96"
+							data-slide
+						>
+							<img
+								class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+								src="./images/slider-3.jpg"
+								alt="Iceland Scene"
+							/>
+							<p
+								class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+							>
+								Rainbow Falls
+							</p>
+						</div>
+						<div
+							class="relative flex-grow flex-shrink-0 w-full pr-4 xs:w-auto xs:basis-96"
+							data-slide
+						>
+							<img
+								class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+								src="./images/slider-4.jpg"
+								alt="Iceland Scene"
+							/>
+							<p
+								class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+							>
+								Canyon Peaks
+							</p>
+						</div>
+						<div
+							class="relative flex-grow flex-shrink-0 w-full pr-4 xs:w-auto xs:basis-96"
+							data-slide
+						>
+							<img
+								class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+								src="./images/slider-5.jpg"
+								alt="Iceland Scene"
+							/>
+							<p
+								class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+							>
+								Mountain Inlet
+							</p>
+						</div>
+						<div
+							class="relative flex-grow flex-shrink-0 w-full pr-4 xs:w-auto xs:basis-96"
+							data-slide
+						>
+							<img
+								class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+								src="./images/slider-6.jpg"
+								alt="Iceland Scene"
+							/>
+							<p
+								class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+							>
+								Angel Cliffs
+							</p>
+						</div>
+						<div
+							class="relative flex-grow flex-shrink-0 w-full pr-4 xs:w-auto xs:basis-96"
+							data-slide
+						>
+							<img
+								class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+								src="./images/slider-7.jpg"
+								alt="Iceland Scene"
+							/>
+							<p
+								class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+							>
+								Aurora Sound
+							</p>
+						</div>
+						<div
+							class="relative flex-grow flex-shrink-0 w-full pr-4 xs:w-auto xs:basis-96"
+							data-slide
+						>
+							<img
+								class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
+								src="./images/slider-8.jpg"
+								alt="Iceland Scene"
+							/>
+							<p
+								class="absolute bottom-4 left-4 px-4 py-2 bg-bkg font-bold text-lg pointer-events-none tracking-wide [@media(hover:hover)]:opacity-0 peer-hover:opacity-100 transition-opacity"
+							>
+								Icy Meadows
+							</p>
+						</div>
+					</div>
+				</div>
 			</main>
 		</div>
 		<script type="module" src="/main.js"></script>
