@@ -47,7 +47,7 @@
 					class="absolute inset-0 bg-gradient-to-b bottom-3/4 from-accent to-transparent"
 				></div>
 				<div
-					class="absolute inset-0 bg-gradient-to-t top-1/3 -bottom-32 from-bkg/80 to-transparent"
+					class="absolute inset-0 bg-gradient-to-t top-3/4 lg:top-1/3 -bottom-32 from-bkg/80 to-transparent"
 				></div>
 				<img
 					class="absolute inset-0 object-cover object-center w-full h-full -z-20"
@@ -70,7 +70,7 @@
 				</h1>
 				<a
 					href="#contact-form"
-					class="flex px-8 py-3 space-x-2 font-medium transition-none border rounded-full bg-accent text-bkg lg:drop-shadow-text-lg hover:drop-shadow-none border-bkg focus:outline-none focus-visible:ring-4 ring-accent ring-offset-bkg ring-offset-2 hover:bg-accent/90"
+					class="flex items-center px-8 py-3 space-x-2 font-medium transition-none border rounded-full bg-accent text-bkg lg:drop-shadow-text-lg hover:drop-shadow-none border-bkg focus:outline-none focus-visible:ring-4 ring-accent ring-offset-bkg ring-offset-2 hover:bg-accent/90"
 				>
 					<span class="tracking-wide uppercase"> Book a Trip</span>
 					<svg
@@ -261,8 +261,10 @@
 					<div data-slideContainer class="flex transition-transform duration-500">
 						<div
 							class="relative flex-grow flex-shrink-0 w-full pr-4 data-slide xs:w-auto"
+							data-slide
 						>
 							<img
+								loading="lazy"
 								class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
 								src="./images/slider-1.jpg"
 								alt="Iceland screen"
@@ -278,6 +280,7 @@
 							data-slide
 						>
 							<img
+								loading="lazy"
 								class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
 								src="./images/slider-2.jpg"
 								alt="Iceland Scene"
@@ -293,6 +296,7 @@
 							data-slide
 						>
 							<img
+								loading="lazy"
 								class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
 								src="./images/slider-3.jpg"
 								alt="Iceland Scene"
@@ -308,6 +312,7 @@
 							data-slide
 						>
 							<img
+								loading="lazy"
 								class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
 								src="./images/slider-4.jpg"
 								alt="Iceland Scene"
@@ -323,6 +328,7 @@
 							data-slide
 						>
 							<img
+								loading="lazy"
 								class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
 								src="./images/slider-5.jpg"
 								alt="Iceland Scene"
@@ -338,6 +344,7 @@
 							data-slide
 						>
 							<img
+								loading="lazy"
 								class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
 								src="./images/slider-6.jpg"
 								alt="Iceland Scene"
@@ -353,6 +360,7 @@
 							data-slide
 						>
 							<img
+								loading="lazy"
 								class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
 								src="./images/slider-7.jpg"
 								alt="Iceland Scene"
@@ -364,10 +372,11 @@
 							</p>
 						</div>
 						<div
-							class="relative flex-grow flex-shrink-0 w-full pr-4 xs:w-auto xs:basis-96"
+							class="relative flex-grow flex-shrink-0 w-full xs:w-auto xs:basis-96"
 							data-slide
 						>
 							<img
+								loading="lazy"
 								class="object-cover h-full [@media(hover:hover)]:grayscale hover:grayscale-0 transition-all peer"
 								src="./images/slider-8.jpg"
 								alt="Iceland Scene"
@@ -380,8 +389,103 @@
 						</div>
 					</div>
 				</div>
+				<section
+					aria-label="map"
+					class="container flex flex-wrap items-center justify-between space-y-12 md:space-x-16 md:space-y-0"
+				>
+					<img
+						src="./images/map.png"
+						alt="Map"
+						class="flex-1 grow"
+						width="400"
+						loading="lazy"
+					/>
+					<div class="grid gap-4 text-center md:text-left grow md:flex-1">
+						<div class="relative">
+							<div
+								class="absolute hidden w-8 h-full md:block bg-accent/10 -left-4"
+							></div>
+							<small class="tracking-widest uppercase text-accent"
+								>A globe of possibilities</small
+							>
+							<h2 id="map" class="text-3xl font-bold tracking-wide">
+								Happy Travelers <br />
+								the World Over
+							</h2>
+						</div>
+						<p class="max-w-2xl text-muted">
+							Don’t take our word for it! Thousands of adventurous travelers have
+							enjoyed more than 250 exotic locations all over the globe!
+						</p>
+					</div>
+				</section>
+				<section
+					aria-labelledby="cta"
+					class="container grid gap-4 text-center max-w-prose"
+				>
+					<div>
+						<small class="tracking-widest uppercase text-accent"
+							>It’s Time to Explore</small
+						>
+						<h2 id="cta" class="text-3xl font-bold tracking-wide">
+							Get Hidden Locations
+						</h2>
+					</div>
+					<p class="max-w-2xl mx-auto text-muted">
+						Not sure where to start? Drop us a line, and we’ll send you new locations
+						before they’re shown on our website.
+					</p>
+					<form
+						id="contact-form"
+						class="flex items-center justify-between max-w-md p-1 mx-auto border-4 rounded-full border-accent"
+					>
+						<input
+							type="email"
+							id="email"
+							required
+							placeholder="Email Address"
+							class="flex-1 w-full p-2 mx-4 text-sm bg-transparent border-b-2 border-transparent rounded-none caret-accent placeholder:text-white focus:placeholder:text-muted focus:outline-none focus:border-accent"
+						/>
+						<label class="sr-only" for="email">Enter your email address</label>
+						<button
+							class="flex px-4 py-3 space-x-2 text-sm font-medium border rounded-full bg-accent text-bkg sm:px-8 border-bkg focus:outline-none focus-visible:ring-4 ring-accent ring-offset-bkg ring-offset-2 hover:bg-accent/90 shrink-0"
+							id="contact-btn"
+						>
+							<span class="tracking-wide uppercase">Sign Up</span>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								fill="currentColor"
+								class="pointer-events-none"
+								viewBox="0 0 256 256"
+							>
+								<rect width="256" height="256" fill="none"></rect>
+								<path
+									d="M210.3,35.9,23.9,88.4a8,8,0,0,0-1.2,15l85.6,40.5a7.8,7.8,0,0,1,3.8,3.8l40.5,85.6a8,8,0,0,0,15-1.2L220.1,45.7A7.9,7.9,0,0,0,210.3,35.9Z"
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="24"
+								></path>
+								<line
+									x1="110.9"
+									y1="145.1"
+									x2="156.1"
+									y2="99.9"
+									fill="none"
+									stroke="currentColor"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="24"
+								></line>
+							</svg>
+						</button>
+					</form>
+				</section>
 			</main>
 		</div>
-		<script type="module" src="/main.js"></script>
+		<script type="module" src="./main.js"></script>
 	</body>
 </html>
